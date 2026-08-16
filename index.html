@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173f3a">
+<title>Menorca · 21—26 Agosto 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{
+ --ink:#183d38;--deep:#123631;--sage:#6f9586;--mint:#eaf2ee;--sand:#f5eee2;
+ --cream:#fcfaf6;--gold:#c89b55;--muted:#6e7772;--white:#fff;
+ --shadow:0 18px 50px rgba(24,61,56,.10);--radius:24px
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}
+a{color:inherit}
+.hero{min-height:650px;color:white;position:relative;overflow:hidden;background:
+ linear-gradient(180deg,rgba(10,44,40,.15),rgba(10,44,40,.78)),
+ linear-gradient(135deg,#5d8f86 0%,#183f3a 100%)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;filter:blur(2px);opacity:.2}
+.hero:before{width:480px;height:480px;background:#d8c092;right:-120px;top:-130px}
+.hero:after{width:300px;height:300px;background:#b5d6c8;left:-100px;bottom:-120px}
+.hero-inner{position:relative;z-index:2;max-width:1180px;margin:auto;padding:48px 28px 70px;min-height:650px;display:flex;flex-direction:column;justify-content:space-between}
+.top{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+.pill{border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.12);padding:9px 14px;border-radius:999px;font-size:13px;backdrop-filter:blur(8px)}
+.hero-copy{max-width:850px}
+.eyebrow{letter-spacing:.18em;text-transform:uppercase;font-size:12px;font-weight:700;opacity:.8}
+h1{font:600 clamp(54px,9vw,112px)/.88 'Playfair Display',serif;margin:16px 0 24px}
+.hero-copy p{font-size:18px;max-width:680px;line-height:1.65;color:rgba(255,255,255,.9)}
+.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.meta span{padding:10px 14px;border-radius:12px;background:rgba(255,255,255,.13);font-size:13px}
+.nav{position:sticky;top:0;z-index:20;background:rgba(252,250,246,.94);backdrop-filter:blur(15px);border-bottom:1px solid #e9e2d7}
+.nav-inner{max-width:1180px;margin:auto;padding:10px 20px;display:flex;gap:7px;overflow:auto}
+.nav a{text-decoration:none;white-space:nowrap;padding:9px 12px;border-radius:10px;font-size:13px}
+.nav a:hover{background:var(--mint)}
+main{max-width:1180px;margin:auto;padding:0 20px 80px}
+.intro{margin-top:-58px;position:relative;z-index:5}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);background:white;border:1px solid #ebe4d9;border-radius:22px;box-shadow:var(--shadow);overflow:hidden}
+.quick div{padding:24px 22px;border-right:1px solid #eee8de}.quick div:last-child{border:0}
+.quick b{display:block;font-size:22px;font-family:'Playfair Display',serif;margin-bottom:5px}.quick small{color:var(--muted)}
+.section{padding-top:72px}.section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:25px}
+.section-title h2{font:600 42px/1.05 'Playfair Display',serif;margin:0}.section-title p{color:var(--muted);max-width:520px;margin:0}
+.day{display:grid;grid-template-columns:105px 1fr;gap:24px;margin-bottom:20px}
+.day-num{font:600 48px/1 'Playfair Display',serif;color:var(--gold);padding-top:5px}.day-num small{display:block;font:700 11px/1.3 'DM Sans';letter-spacing:.13em;text-transform:uppercase;color:var(--muted);margin-top:8px}
+.day-card{background:white;border:1px solid #e9e3d9;border-radius:var(--radius);padding:27px 29px;box-shadow:0 8px 30px rgba(24,61,56,.045)}
+.day-card h3{font:600 29px/1.15 'Playfair Display',serif;margin:0 0 8px}.subtitle{color:var(--sage);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+.timeline{margin-top:22px;border-left:1px solid #d9e3de;padding-left:20px}
+.item{position:relative;padding:0 0 21px 2px}.item:last-child{padding-bottom:0}
+.item:before{content:"";position:absolute;width:8px;height:8px;border-radius:50%;background:var(--gold);left:-25px;top:6px}
+.time{font-weight:700;color:var(--ink);font-size:13px}.item p{margin:5px 0 0;color:#485550;line-height:1.6}
+.note{margin-top:22px;padding:15px 17px;background:var(--mint);border-radius:15px;font-size:14px;color:#31534b}.note strong{color:var(--deep)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.card{background:white;border:1px solid #e9e3d9;border-radius:20px;padding:22px;box-shadow:0 7px 25px rgba(24,61,56,.04)}
+.card .icon{font-size:26px;margin-bottom:12px}.card h3{font:600 22px 'Playfair Display',serif;margin:0 0 8px}.card p,.card li{color:#59635f;font-size:14px;line-height:1.65}.card ul{padding-left:19px}
+.price{display:inline-block;margin-top:10px;color:#8b692f;background:#faf2e3;border-radius:8px;padding:5px 8px;font-size:12px;font-weight:700}
+.callout{background:var(--deep);color:white;border-radius:28px;padding:38px;display:grid;grid-template-columns:1.3fr 1fr;gap:35px;align-items:center}
+.callout h2{font:600 39px 'Playfair Display',serif;margin:0 0 12px}.callout p{color:rgba(255,255,255,.78);line-height:1.7}.callout .box{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:19px}
+.table-wrap{overflow:auto;border:1px solid #e9e3d9;border-radius:18px;background:white}
+table{width:100%;border-collapse:collapse;min-width:700px}th,td{text-align:left;padding:15px;border-bottom:1px solid #eee8de;font-size:13px}th{background:var(--mint);color:var(--ink)}td{color:#59635f}
+footer{background:#edf2ef;padding:35px 20px;color:#60706a;text-align:center;font-size:13px}
+@media(max-width:800px){.quick{grid-template-columns:repeat(2,1fr)}.quick div:nth-child(2){border-right:0}.quick div{border-bottom:1px solid #eee8de}.grid{grid-template-columns:1fr 1fr}.callout{grid-template-columns:1fr}.day{grid-template-columns:65px 1fr}.day-num{font-size:35px}.day-card{padding:22px}}
+@media(max-width:560px){.hero{min-height:600px}.hero-inner{min-height:600px;padding:28px 20px 45px}.top .pill{display:none}h1{font-size:58px}.hero-copy p{font-size:16px}.quick{grid-template-columns:1fr 1fr}.quick div{padding:17px 14px}.quick b{font-size:18px}.section{padding-top:50px}.section-title h2{font-size:34px}.section-title{display:block}.section-title p{margin-top:8px}.grid{grid-template-columns:1fr}.day{gap:12px}.day-num{font-size:30px}.day-card{padding:18px}.callout{padding:25px}.callout h2{font-size:32px}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="hero-inner">
+<div class="top"><div class="logo">Menorca · Family Escape</div><div class="pill">21—26 Agosto 2026</div></div>
+<div class="hero-copy">
+<div class="eyebrow">6 dias · 4 pessoas · 1 ilha</div>
+<h1>Menorca,<br>sem pressas.</h1>
+<p>Praias de água turquesa, pequenas aventuras, cultura na medida certa, bons jantares e muito tempo para a piscina. Um roteiro desenhado para uma família com crianças de 9 e 4 anos.</p>
+<div class="meta"><span>📍 Base · Santo Tomás</span><span>🚗 Carro · Autos Menorca</span><span>✈️ Mahón · 14:55 / 15:05</span><span>🌅 Pôr do sol · ~20:30</span></div>
+</div>
+</div>
+</header>
+
+<nav class="nav"><div class="nav-inner">
+<a href="#roteiro">Roteiro</a><a href="#dia21">21</a><a href="#dia22">22</a><a href="#dia23">23</a><a href="#dia24">24</a><a href="#dia25">25</a><a href="#dia26">26</a><a href="#comer">Comer</a><a href="#planob">Plano B</a>
+</div></nav>
+
+<main>
+<section class="intro">
+<div class="quick">
+<div><b>🌊 4</b><small>manhãs de praia</small></div>
+<div><b>🚤 1</b><small>passeio de barco</small></div>
+<div><b>🏛️ 2</b><small>tardes culturais</small></div>
+<div><b>🌅 4</b><small>momentos de pôr do sol</small></div>
+</div>
+</section>
+
+<section class="section" id="roteiro">
+<div class="section-title"><h2>O roteiro</h2><p>A regra da viagem: praia cedo, sombra e descanso no pico do calor, e uma segunda saída ao fim da tarde.</p></div>
+
+<div class="day" id="dia21"><div class="day-num">21<small>SEX</small></div><div class="day-card">
+<div class="subtitle">Chegada · Santo Tomás</div><h3>Primeiro mergulho</h3>
+<div class="timeline">
+<div class="item"><div class="time">14:55</div><p>Chegada a Mahón · bagagem + recolha do carro.</p></div>
+<div class="item"><div class="time">15:45—16:25</div><p>Aeroporto → hotel · check-in.</p></div>
+<div class="item"><div class="time">16:30—18:45</div><p><strong>Piscina e parque aquático do hotel.</strong> Nada de conduzir mais neste dia.</p></div>
+<div class="item"><div class="time">19:00—20:35</div><p>Passadiços de Santo Tomás + <strong>pôr do sol na praia</strong>.</p></div>
+<div class="item"><div class="time">21:00</div><p><strong>Es Pins</strong> · reserva exterior já feita.</p></div>
+</div>
+<div class="note"><strong>Dia sem pressa:</strong> se o voo atrasar, eliminar a piscina e manter apenas praia + jantar.</div>
+</div></div>
+
+<div class="day" id="dia22"><div class="day-num">22<small>SÁB</small></div><div class="day-card">
+<div class="subtitle">Es Grau · Binibeca · Binidalí</div><h3>Trilhos de manhã, mar ao fim do dia</h3>
+<div class="timeline">
+<div class="item"><div class="time">08:15—09:00</div><p>Pequeno-almoço + saída para Es Grau.</p></div>
+<div class="item"><div class="time">09:40—12:15</div><p><strong>Sa Gola → Es Grau.</strong> Fazer os miradouros apenas se as crianças estiverem com energia; praia no final.</p></div>
+<div class="item"><div class="time">12:30</div><p><strong>El Bar de Tamarindos</strong> · reserva já feita.</p></div>
+<div class="item"><div class="time">14:00—16:30</div><p>Binibeca Vell + praia. Passeio curto, sem pressa.</p></div>
+<div class="item"><div class="time">17:00—20:00</div><p><strong>Cala Binidalí</strong> · a melhor parte do dia para aproveitar a enseada.</p></div>
+<div class="item"><div class="time">21:00</div><p>Alaior + gelado <em>apenas se ainda houver energia</em>.</p></div>
+</div>
+<div class="note"><strong>Nota:</strong> Binibeca Vell é propriedade privada; respeitar os percursos e horários de visita.</div>
+</div></div>
+
+<div class="day" id="dia23"><div class="day-num">23<small>DOM</small></div><div class="day-card">
+<div class="subtitle">Algaiarens · Cala Morell · Ciutadella</div><h3>Grutas, falésias e cidade velha</h3>
+<div class="timeline">
+<div class="item"><div class="time">08:00</div><p>Pequeno-almoço + saída.</p></div>
+<div class="item"><div class="time">08:45—10:45</div><p><strong>Algaiarens / Es Tancats.</strong> Praia antes do calor.</p></div>
+<div class="item"><div class="time">11:20—12:00</div><p><strong>Necrópole de Cala Morell</strong> · visita curta às grutas.</p></div>
+<div class="item"><div class="time">12:15—13:20</div><p>Pont d'en Gil · passeio curto até ao arco natural.</p></div>
+<div class="item"><div class="time">13:30—16:30</div><p>Almoço tardio + regresso ao hotel + piscina/descanso.</p></div>
+<div class="item"><div class="time">17:30—19:00</div><p><strong>Lithica</strong> · pedreiras e jardins.</p></div>
+<div class="item"><div class="time">19:15—21:15</div><p><strong>Ciutadella</strong> · Born, Catedral, centro histórico e porto. Jantar no <strong>Pinzell · 19:30</strong> como reservado.</p></div>
+</div>
+<div class="note"><strong>Para as crianças:</strong> não tentar cumprir toda a lista original de monumentos. O centro histórico + porto + gelado é suficiente.</div>
+</div></div>
+
+<div class="day" id="dia24"><div class="day-num">24<small>SEG</small></div><div class="day-card">
+<div class="subtitle">Son Saura · Talaier · Galdana</div><h3>A grande manhã de praias</h3>
+<div class="timeline">
+<div class="item"><div class="time">08:45</div><p>Chegada ao estacionamento de Son Saura.</p></div>
+<div class="item"><div class="time">09:00—11:30</div><p><strong>Son Saura → Bellavista → Cala des Talaier.</strong> Começar pelo trecho mais longo.</p></div>
+<div class="item"><div class="time">11:30—12:15</div><p>Banho final em Son Saura, junto ao carro.</p></div>
+<div class="item"><div class="time">13:00</div><p>Almoço no <strong>Bar Restaurant Acuario · Cala Galdana</strong>.</p></div>
+<div class="item"><div class="time">14:00—16:30</div><p>Descanso, sombra e sobremesa.</p></div>
+<div class="item"><div class="time">17:00—19:00</div><p><strong>Cala Mitjana</strong> · trilho com temperaturas mais agradáveis.</p></div>
+<div class="item"><div class="time">19:30</div><p>Regresso ao hotel · piscina/duche.</p></div>
+</div>
+<div class="note"><strong>Decisão:</strong> não acrescentar mais uma praia à tarde. O dia já tem bastante caminhada.</div>
+</div></div>
+
+<div class="day" id="dia25"><div class="day-num">25<small>TER</small></div><div class="day-card">
+<div class="subtitle">Fornells · Pregonda · Cavalleria</div><h3>O dia do barco 🚤</h3>
+<div class="timeline">
+<div class="item"><div class="time">08:00—09:15</div><p>Santo Tomás → Fornells.</p></div>
+<div class="item"><div class="time">10:30—13:30</div><p><strong>Passeio de barco pelo norte</strong> com paragens para banho e zona de Pregonda.</p></div>
+<div class="item"><div class="time">13:45—15:00</div><p>Almoço em Fornells + gelado no porto.</p></div>
+<div class="item"><div class="time">15:15—17:00</div><p><strong>Cavalleria</strong> · banho curto.</p></div>
+<div class="item"><div class="time">17:30—18:30</div><p><strong>Monte Toro / Es Mercadal</strong> · opcional.</p></div>
+<div class="item"><div class="time">19:30</div><p>Hotel · piscina, jantar e noite tranquila.</p></div>
+</div>
+<div class="note"><strong>Estimativa barco:</strong> ~168€ para a família de quatro na opção partilhada, dependendo da empresa/saída escolhida.</div>
+</div></div>
+
+<div class="day" id="dia26"><div class="day-num">26<small>QUA</small></div><div class="day-card">
+<div class="subtitle">Santo Tomás · Mahón · aeroporto</div><h3>Última manhã, sem correr</h3>
+<div class="timeline">
+<div class="item"><div class="time">08:00—09:30</div><p>Pequeno-almoço e último mergulho na piscina ou praia.</p></div>
+<div class="item"><div class="time">09:30—11:00</div><p>Opcional: <strong>Mahón + brunch</strong>. Se preferirem relaxar, ficar no hotel.</p></div>
+<div class="item"><div class="time">11:00—12:00</div><p>Regresso ao hotel, malas e check-out.</p></div>
+<div class="item"><div class="time">12:00—13:00</div><p>Hotel → aeroporto + entrega do carro.</p></div>
+<div class="item"><div class="time">15:05</div><p><strong>Voo de regresso.</strong></p></div>
+</div>
+<div class="note"><strong>Eu escolheria Santo Tomás:</strong> é muito mais relaxante do que acrescentar La Mola antes de um voo.</div>
+</div></div>
+</section>
+
+<section class="section">
+<div class="callout">
+<div><h2>O segredo do roteiro</h2><p>Menorca em agosto não é uma ilha para “riscar” praias de uma lista. É para chegar cedo, nadar, comer bem, fugir do calor, voltar à água ao fim do dia e deixar espaço para as crianças simplesmente brincarem.</p></div>
+<div class="box"><strong>Regra 09 · 13 · 17</strong><br><br>09h — praia / aventura<br>13h — almoço + sombra<br>17h — segunda praia / passeio</div>
+</div>
+</section>
+
+<section class="section" id="comer">
+<div class="section-title"><h2>Comer & beber</h2><p>Uma mistura de sítios especiais, familiares e paragens simples para café e gelado.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🌅</div><h3>Es Pins</h3><p>Santo Tomás · jantar do dia 21. A localização faz deste o jantar perfeito para começar a viagem.</p><span class="price">Já reservado · 21:00</span></div>
+<div class="card"><div class="icon">🍽️</div><h3>Pinzell</h3><p>Ciutadella · cozinha contemporânea com produto local. Boa escolha para o jantar especial.</p><span class="price">~30€ / pessoa</span></div>
+<div class="card"><div class="icon">🦞</div><h3>Sa Fonda Fornells</h3><p>Para experimentar uma caldereta de lagosta numa refeição especial.</p><span class="price">~30–70€ / pessoa</span></div>
+<div class="card"><div class="icon">☕</div><h3>Bar Heladería Santo Tomás</h3><p>Pequeno-almoço simples e muito conveniente. O menu inclui explicitamente <strong>Café Latte</strong>.</p><span class="price">~10–20€</span></div>
+<div class="card"><div class="icon">🥐</div><h3>Cas Sucrer</h3><p>Es Mercadal · café e pastelaria tradicional. Boa oportunidade para uma ensaimada.</p></div>
+<div class="card"><div class="icon">🍦</div><h3>Gelateria Deliri</h3><p>Ciutadella · excelente paragem para terminar o passeio pela cidade.</p></div>
+</div>
+</section>
+
+<section class="section" id="planob">
+<div class="section-title"><h2>Planos B</h2><p>Para não deixar o tempo decidir por vocês à última hora.</p></div>
+<div class="grid">
+<div class="card"><div class="icon">🌧️</div><h3>Chuva</h3><p>Trocar trilhos por Mahón, almoço longo e centro histórico. Guardar a praia para a tarde se abrir.</p></div>
+<div class="card"><div class="icon">⛈️</div><h3>Trovoada</h3><p>Ciutadella + Necrópole de Cala Morell + atividades interiores. Não fazer trilhos junto a falésias.</p></div>
+<div class="card"><div class="icon">🌊</div><h3>Mar agitado</h3><p>Não forçar o barco. Fazer Fornells, Es Mercadal e Monte Toro; guardar Cavalleria para quando o mar estiver melhor.</p></div>
+<div class="card"><div class="icon">🏖️</div><h3>Querem Macarella?</h3><p>Se houver vontade de acrescentar a “praia estrela”, substituiria Cala Mitjana — não acrescentaria mais uma praia ao roteiro.</p></div>
+<div class="card"><div class="icon">🏰</div><h3>La Mola</h3><p>Excelente carta para um dia de chuva. Não a colocaria no dia 26 por causa do voo.</p></div>
+<div class="card"><div class="icon">😴</div><h3>Crianças cansadas</h3><p>Eliminar Alaior, Monte Toro ou qualquer visita opcional. A piscina do hotel passa a ser o programa.</p></div>
+</div>
+</section>
+
+<section class="section">
+<div class="section-title"><h2>Resumo de bolso</h2><p>Para fazer screenshot e ter à mão durante a viagem.</p></div>
+<div class="table-wrap"><table>
+<tr><th>Dia</th><th>Manhã</th><th>Tarde</th><th>Noite</th></tr>
+<tr><td><strong>21</strong></td><td>✈️ Chegada</td><td>🏊 Hotel</td><td>🌅 Santo Tomás · Es Pins</td></tr>
+<tr><td><strong>22</strong></td><td>🥾 Sa Gola · Es Grau</td><td>🏖️ Binibeca · Binidalí</td><td>🍦 Alaior opcional</td></tr>
+<tr><td><strong>23</strong></td><td>🏖️ Algaiarens · grutas · Pont d'en Gil</td><td>⛲ Hotel · Lithica</td><td>🏛️ Ciutadella · Pinzell</td></tr>
+<tr><td><strong>24</strong></td><td>🥾 Son Saura · Talaier</td><td>🏖️ Galdana · Mitjana</td><td>🏊 Hotel</td></tr>
+<tr><td><strong>25</strong></td><td>🚤 Barco · Pregonda</td><td>🏖️ Fornells · Cavalleria</td><td>🌙 Hotel</td></tr>
+<tr><td><strong>26</strong></td><td>☕ Santo Tomás / Mahón</td><td>✈️ Aeroporto</td><td>—</td></tr>
+</table></div>
+</section>
+</main>
+
+<footer>Menorca · 21—26 Agosto 2026 · roteiro familiar criado para utilização em telemóvel e desktop</footer>
+</body>
+</html>
